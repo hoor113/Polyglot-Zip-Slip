@@ -1,0 +1,16 @@
+{
+  "name": "file-upload-zip-slip-nodejs",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Intentionally vulnerable Zip Slip lab using Express",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "adm-zip": "0.5.16",
+    "ejs": "3.1.10",
+    "express": "4.21.2",
+    "multer": "1.4.5-lts.1"
+  }
+}

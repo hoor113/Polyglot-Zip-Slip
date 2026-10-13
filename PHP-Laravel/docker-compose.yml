@@ -1,0 +1,8 @@
+version: '3.8'
+
+services:
+  my-app:
+    build: .
+    ports:
+      - "127.0.0.1:8034:8000"
+    container_name: lab-attack-zip-slip-laravel

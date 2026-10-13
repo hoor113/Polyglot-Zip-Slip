@@ -1,0 +1,70 @@
+{% extends "base.html" %}
+
+{% block title %}Audit Bundle Upload - Zip Slip Exploration{% endblock %}
+
+{% block content %}
+<div class="page-header">
+    <h1 class="page-title">Audit Bundle Ingestion Center</h1>
+    <p class="page-subtitle">Upload zipped bundles containing audit assets, template fragments, and reporting logs.</p>
+</div>
+
+<div class="grid" style="grid-template-columns: 1fr 1fr;">
+    <div class="card">
+        <h3 class="card-title">📦 Upload Audit Archive (.zip)</h3>
+        
+        <form method="POST" action="{{ url_for('upload_bundle') }}" enctype="multipart/form-data">
+            <div class="form-group">
+                <label class="form-label">Select ZIP Bundle:</label>
+                <input type="file" name="bundle" accept=".zip" class="form-input" required>
+            </div>
+            
+            <button type="submit" class="btn btn-primary" style="width: 100%;">
+                <span>🚀</span> Upload & Unpack Bundle
+            </button>
+        </form>
+
+        <div style="margin-top: 24px; padding: 14px; background: rgba(15, 23, 42, 0.8); border-radius: 8px; border: 1px dashed var(--border-color);">
+            <h4 style="font-size: 0.85rem; color: var(--accent-warning); margin-bottom: 6px;">💡 Zip Slip Architecture Note:</h4>
+            <p style="font-size: 0.8rem; color: var(--text-secondary);">
+                The extraction directory is <code>app/storage/temp_extract/</code>.
+                <br>If a ZIP file contains entry names with relative directory traversals targeting <code>../../../../attacks/04_ssti_rce/preview.html</code>, the unzipper writes directly to the SSTI module template!
+            </p>
+        </div>
+    </div>
+
+    <div class="card">
+        <h3 class="card-title">📋 Extraction Log & Status</h3>
+        
+        {% if message %}
+            <div class="alert alert-{{ status }}">{{ message }}</div>
+        {% endif %}
+
+        {% if extracted_files %}
+            <h4 style="font-size: 0.9rem; color: var(--text-secondary); margin-bottom: 8px;">Extracted Files:</h4>
+            <table class="data-table">
+                <thead>
+                    <tr>
+                        <th>Archive Path</th>
+                        <th>Size</th>
+                        <th>Target Destination</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for item in extracted_files %}
+                        <tr>
+                            <td><code class="badge badge-warning">{{ item.filename }}</code></td>
+                            <td>{{ item.size }} B</td>
+                            <td><code style="font-size: 0.75rem; color: var(--accent-cyan);">{{ item.resolved_dest }}</code></td>
+                        </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+
+        {% else %}
+            <div style="text-align: center; padding: 30px; color: var(--text-secondary);">
+                <p>No bundle processed yet. Upload a valid <code>.zip</code> file to inspect extraction output.</p>
+            </div>
+        {% endif %}
+    </div>
+</div>
+{% endblock %}
