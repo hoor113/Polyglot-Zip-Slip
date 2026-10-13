@@ -1,4 +1,4 @@
-# Polyglot Zip Slip Lab
+# Polyglot Zip Slip
 
 Lab này minh họa lỗ hổng **Zip Slip** trong nhiều công nghệ web khác nhau. Mỗi
 module cung cấp cùng một giao diện upload ZIP và cùng hợp đồng HTTP để có thể
