@@ -425,89 +425,89 @@ Java-SpringBoot/*.log
 ###############################
 
 # Byte-compiled / optimized / DLL files
-Python-Django/__pycache__/
-Python-Django/*.py[codz]
-Python-Django/*$py.class
+Python-Flask/__pycache__/
+Python-Flask/*.py[codz]
+Python-Flask/*$py.class
 
 # C extensions
-Python-Django/*.so
+Python-Flask/*.so
 
 # Distribution / packaging
-Python-Django/.Python
-Python-Django/build/
-Python-Django/develop-eggs/
-Python-Django/dist/
-Python-Django/downloads/
-Python-Django/eggs/
-Python-Django/.eggs/
-Python-Django/lib/
-Python-Django/lib64/
-Python-Django/parts/
-Python-Django/sdist/
-Python-Django/var/
-Python-Django/wheels/
-Python-Django/share/python-wheels/
-Python-Django/*.egg-info/
-Python-Django/.installed.cfg
-Python-Django/*.egg
-Python-Django/MANIFEST
+Python-Flask/.Python
+Python-Flask/build/
+Python-Flask/develop-eggs/
+Python-Flask/dist/
+Python-Flask/downloads/
+Python-Flask/eggs/
+Python-Flask/.eggs/
+Python-Flask/lib/
+Python-Flask/lib64/
+Python-Flask/parts/
+Python-Flask/sdist/
+Python-Flask/var/
+Python-Flask/wheels/
+Python-Flask/share/python-wheels/
+Python-Flask/*.egg-info/
+Python-Flask/.installed.cfg
+Python-Flask/*.egg
+Python-Flask/MANIFEST
 
 # PyInstaller
 #   Usually these files are written by a python script from a template
 #   before PyInstaller builds the exe, so as to inject date/other infos into it.
-Python-Django/*.manifest
-Python-Django/*.spec
+Python-Flask/*.manifest
+Python-Flask/*.spec
 
 # Installer logs
-Python-Django/pip-log.txt
-Python-Django/pip-delete-this-directory.txt
+Python-Flask/pip-log.txt
+Python-Flask/pip-delete-this-directory.txt
 
 # Unit test / coverage reports
-Python-Django/htmlcov/
-Python-Django/.tox/
-Python-Django/.nox/
-Python-Django/.coverage
-Python-Django/.coverage.*
-Python-Django/.cache
-Python-Django/nosetests.xml
-Python-Django/coverage.xml
-Python-Django/*.cover
-Python-Django/*.py.cover
-Python-Django/*.lcov
-Python-Django/.hypothesis/
-Python-Django/.pytest_cache/
-Python-Django/cover/
+Python-Flask/htmlcov/
+Python-Flask/.tox/
+Python-Flask/.nox/
+Python-Flask/.coverage
+Python-Flask/.coverage.*
+Python-Flask/.cache
+Python-Flask/nosetests.xml
+Python-Flask/coverage.xml
+Python-Flask/*.cover
+Python-Flask/*.py.cover
+Python-Flask/*.lcov
+Python-Flask/.hypothesis/
+Python-Flask/.pytest_cache/
+Python-Flask/cover/
 
 # Translations
-Python-Django/*.mo
-Python-Django/*.pot
+Python-Flask/*.mo
+Python-Flask/*.pot
 
 # Django stuff:
-Python-Django/*.log
-Python-Django/local_settings.py
-Python-Django/db.sqlite3
-Python-Django/db.sqlite3-journal
+Python-Flask/*.log
+Python-Flask/local_settings.py
+Python-Flask/db.sqlite3
+Python-Flask/db.sqlite3-journal
 
 # Flask stuff:
-Python-Django/instance/
-Python-Django/.webassets-cache
+Python-Flask/instance/
+Python-Flask/.webassets-cache
 
 # Scrapy stuff:
-Python-Django/.scrapy
+Python-Flask/.scrapy
 
 # Sphinx documentation
-Python-Django/docs/_build/
+Python-Flask/docs/_build/
 
 # PyBuilder
-Python-Django/.pybuilder/
-Python-Django/target/
+Python-Flask/.pybuilder/
+Python-Flask/target/
 
 # Jupyter Notebook
-Python-Django/.ipynb_checkpoints
+Python-Flask/.ipynb_checkpoints
 
 # IPython
-Python-Django/profile_default/
-Python-Django/ipython_config.py
+Python-Flask/profile_default/
+Python-Flask/ipython_config.py
 
 # pyenv
 #   For a library or package, you might want to ignore these files since the code is
@@ -541,73 +541,73 @@ Python-Django/ipython_config.py
 #   https://pdm-project.org/en/latest/usage/project/#working-with-version-control
 # pdm.lock
 # pdm.toml
-Python-Django/.pdm-python
-Python-Django/.pdm-build/
+Python-Flask/.pdm-python
+Python-Flask/.pdm-build/
 
 # pixi
 #   Similar to Pipfile.lock, it is generally recommended to include pixi.lock in version control.
 # pixi.lock
 #   Pixi creates a virtual environment in the .pixi directory, just like venv module creates one
 #   in the .venv directory. It is recommended not to include this directory in version control.
-Python-Django/.pixi/*
-!Python-Django/.pixi/config.toml
+Python-Flask/.pixi/*
+!Python-Flask/.pixi/config.toml
 
 # PEP 582; used by e.g. github.com/David-OConnor/pyflow and github.com/pdm-project/pdm
-Python-Django/__pypackages__/
+Python-Flask/__pypackages__/
 
 # Celery stuff
-Python-Django/celerybeat-schedule*
-Python-Django/celerybeat.pid
+Python-Flask/celerybeat-schedule*
+Python-Flask/celerybeat.pid
 
 # Redis
-Python-Django/*.rdb
-Python-Django/*.aof
-Python-Django/*.pid
+Python-Flask/*.rdb
+Python-Flask/*.aof
+Python-Flask/*.pid
 
 # RabbitMQ
-Python-Django/mnesia/
-Python-Django/rabbitmq/
-Python-Django/rabbitmq-data/
+Python-Flask/mnesia/
+Python-Flask/rabbitmq/
+Python-Flask/rabbitmq-data/
 
 # ActiveMQ
-Python-Django/activemq-data/
+Python-Flask/activemq-data/
 
 # SageMath parsed files
-Python-Django/*.sage.py
+Python-Flask/*.sage.py
 
 # Environments
-Python-Django/.env
-Python-Django/.envrc
-Python-Django/.venv
-Python-Django/env/
-Python-Django/venv/
-Python-Django/ENV/
-Python-Django/env.bak/
-Python-Django/venv.bak/
+Python-Flask/.env
+Python-Flask/.envrc
+Python-Flask/.venv
+Python-Flask/env/
+Python-Flask/venv/
+Python-Flask/ENV/
+Python-Flask/env.bak/
+Python-Flask/venv.bak/
 
 # Spyder project settings
-Python-Django/.spyderproject
-Python-Django/.spyproject
+Python-Flask/.spyderproject
+Python-Flask/.spyproject
 
 # Rope project settings
-Python-Django/.ropeproject
+Python-Flask/.ropeproject
 
 # mkdocs/Zensical documentation
-Python-Django/site
+Python-Flask/site
 
 # mypy
-Python-Django/.mypy_cache/
-Python-Django/.dmypy.json
-Python-Django/dmypy.json
+Python-Flask/.mypy_cache/
+Python-Flask/.dmypy.json
+Python-Flask/dmypy.json
 
 # Pyre type checker
-Python-Django/.pyre/
+Python-Flask/.pyre/
 
 # pytype static type analyzer
-Python-Django/.pytype/
+Python-Flask/.pytype/
 
 # Cython debug symbols
-Python-Django/cython_debug/
+Python-Flask/cython_debug/
 
 # PyCharm
 #   JetBrains specific template is maintained in a separate JetBrains.gitignore that can
@@ -620,7 +620,7 @@ Python-Django/cython_debug/
 #   Abstra is an AI-powered process automation framework.
 #   Ignore directories containing user credentials, local state, and settings.
 #   Learn more at https://abstra.io/docs
-Python-Django/.abstra/
+Python-Flask/.abstra/
 
 # Visual Studio Code
 #   Visual Studio Code specific template is maintained in a separate VisualStudioCode.gitignore that
@@ -629,21 +629,21 @@ Python-Django/.abstra/
 #   could uncomment the following to ignore the entire vscode folder
 # .vscode/
 # Temporary file for partial code execution
-Python-Django/tempCodeRunnerFile.py
+Python-Flask/tempCodeRunnerFile.py
 
 # Ruff stuff:
-Python-Django/.ruff_cache/
+Python-Flask/.ruff_cache/
 
 # PyPI configuration file
-Python-Django/.pypirc
+Python-Flask/.pypirc
 
 # Marimo
-Python-Django/marimo/_static/
-Python-Django/marimo/_lsp/
-Python-Django/__marimo__/
+Python-Flask/marimo/_static/
+Python-Flask/marimo/_lsp/
+Python-Flask/__marimo__/
 
 # Streamlit
-Python-Django/.streamlit/secrets.toml
+Python-Flask/.streamlit/secrets.toml
 
 
 #############################
